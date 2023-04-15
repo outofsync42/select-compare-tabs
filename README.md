@@ -1,4 +1,4 @@
-# Select For Compare Extended
+# Select Compare Tabs
 
 Adds select compare options to tabs in the editor for quicker access to diff functionality as well as ability to swap files in diff editor.
 
