@@ -5,6 +5,7 @@
 	"version": "1.0.0",
 	"publisher": "outofsync42",
 	"license": "MIT",
+	"icon": "img/icon.png",
 	"repository": {
 		"type": "GitHub",
 		"url": "https://github.com/outofsync42/select-compare-tabs"

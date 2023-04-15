@@ -15,6 +15,10 @@ Adds select compare options to tabs in the editor for quicker access to diff fun
 3. Right-click on another file tab in the editor.
 4. Choose "Compare with selected" to compare the two files.
 
+## Example
+
+![Select Compare Tabs](https://raw.githubusercontent.com/outofsync42/select-compare-tabs/master/img/select-compare-tabs.gif)
+
 ## Extension Settings
 
 This extension contributes the following commands:
