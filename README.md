@@ -6,7 +6,7 @@ Adds select compare options to tabs in the editor for quicker access to diff fun
 
 - Adds "Select For Compare" to file editor tabs.
 - Adds "Compare With Selected" to file editor tabs.
-- Adds "Swap Files" button to diff editor view to switch file positions in the diff panel.
+- Adds "Swap" button to diff editor view to switch file positions in the diff panel.
 
 ## Usage
 
