@@ -1,0 +1,79 @@
+{
+	"name": "select-compare-tabs",
+	"displayName": "Select Compare Tabs",
+	"description": "Adds select compare options to tabs in the editor for quicker access to diff functionality as well as ability to swap files in diff editor.",
+	"version": "1.0.0",
+	"publisher": "outofsync42",
+	"license": "MIT",
+	"repository": {
+		"type": "GitHub",
+		"url": "https://github.com/outofsync42/select-compare-tabs"
+	},
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "select-compare-tabs.selectForCompare",
+				"title": "Diff: Select for compare",
+				"category": "File"
+			},
+			{
+				"command": "select-compare-tabs.compareWithSelected",
+				"title": "Diff: Compare With Selected",
+				"category": "File"
+			},
+			{
+				"title": "Swap sides",
+				"category": "Diff Merge",
+				"command": "select-compare-tabs.swapFiles",
+				"icon": "$(arrow-both)"
+			}
+		],
+		"menus": {
+			"editor/title/context": [
+				{
+					"command": "select-compare-tabs.selectForCompare",
+					"group": "1_diff@1",
+					"when": "editorIsOpen && !editorHasMultipleSelections"
+				},
+				{
+					"command": "select-compare-tabs.compareWithSelected",
+					"group": "1_diff@2",
+					"when": "editorIsOpen && !editorHasMultipleSelections && select-compare-tabs.compareEnabled"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "select-compare-tabs.swapFiles",
+					"group": "navigation@-101",
+					"when": "inDiffEditor"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.77.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "14.x",
+		"eslint": "^8.14.0",
+		"glob": "^8.0.1",
+		"mocha": "^9.2.2",
+		"typescript": "^4.6.4",
+		"@vscode/test-electron": "^2.1.3"
+	}
+}
