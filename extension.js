@@ -1,6 +1,6 @@
 const vscode = require('vscode');
 
-function SelectCompare() {
+function Extension() {
 
 	let file1;
 	let file2;
@@ -44,20 +44,20 @@ function SelectCompare() {
 function activate(context) {
 
 	//INIT EXTENSION
-	SelectCompare = new SelectCompare();
+	let ext = new Extension();
 
 	//COMMANDS
 	context.subscriptions.push(vscode.commands.registerCommand('select-compare-tabs.selectForCompare', function (event) {
 		//selectForCompare
-		SelectCompare.selectForCompare(event);
+		ext.selectForCompare(event);
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('select-compare-tabs.compareWithSelected', function (event) {
 		//compareWithSelected
-		SelectCompare.compareWithSelected(event);
+		ext.compareWithSelected(event);
 	}));
 	context.subscriptions.push(vscode.commands.registerCommand('select-compare-tabs.swapFiles', function () {
 		//swapFiles
-		SelectCompare.swapFiles();
+		ext.swapFiles();
 	}));
 
 }
