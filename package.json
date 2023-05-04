@@ -24,12 +24,12 @@
 		"commands": [
 			{
 				"command": "select-compare-tabs.selectForCompare",
-				"title": "Diff: Select for compare",
+				"title": "Select for compare",
 				"category": "File"
 			},
 			{
 				"command": "select-compare-tabs.compareWithSelected",
-				"title": "Diff: Compare With Selected",
+				"title": "Compare With Selected",
 				"category": "File"
 			},
 			{
