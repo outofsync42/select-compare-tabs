@@ -1,3 +1,4 @@
+const { log } = require('console');
 const vscode = require('vscode');
 
 function Extension() {
@@ -31,8 +32,9 @@ function Extension() {
 		//get visible editors in diff panel
 		let selectedEditors = vscode.window.visibleTextEditors;
 		//switch files and set
-		file1 = selectedEditors[1].document.uri;
-		file2 = selectedEditors[0].document.uri;
+		file1 = selectedEditors[2].document.uri;
+		file2 = selectedEditors[1].document.uri;
+
 		//close diff editor
 		vscode.commands.executeCommand('workbench.action.closeActiveEditor');
 		//open new diff editor
