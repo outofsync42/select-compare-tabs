@@ -2,7 +2,7 @@
 	"name": "select-compare-tabs",
 	"displayName": "Select Compare Tabs",
 	"description": "Adds select compare options to tabs in the editor for quicker access to diff functionality as well as ability to swap files in diff editor.",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"publisher": "outofsync42",
 	"license": "MIT",
 	"icon": "img/icon.png",
