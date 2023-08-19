@@ -32,8 +32,14 @@ function Extension() {
 		//get visible editors in diff panel
 		let selectedEditors = vscode.window.visibleTextEditors;
 		//switch files and set
-		file1 = selectedEditors[2].document.uri;
-		file2 = selectedEditors[1].document.uri;
+		
+		if(typeof selectedEditors[2] !=='undefined'){
+			file1 = selectedEditors[2].document.uri;
+			file2 = selectedEditors[1].document.uri;
+		} else {
+			file1 = selectedEditors[1].document.uri;
+			file2 = selectedEditors[0].document.uri;
+		}
 
 		//close diff editor
 		vscode.commands.executeCommand('workbench.action.closeActiveEditor');
