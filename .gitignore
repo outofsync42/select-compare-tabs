@@ -1,1 +1,75 @@
 *.vsix
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+yarn.lock
+*.log.*
+
+# Compiled output
+dist
+dist-ssr
+out
+.next
+
+# Dependencies
+node_modules
+.yarn
+
+# IDE - VSCode and JetBrains IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+!.vscode/tours
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+
+# Environment variables
+.env
+
+# SSL/TLS certificates and private keys
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Coverage reports
+coverage/
+
+# PID files
+*.pid
+
+# Database seed and backup files
+*.seed
+*.backup
+
+# Public directory for tools like Create React App
+public/images/banners
+public/images/cards
+public/images/custom
+public/images/icons
+public/images/logos
+public/images/misc
+public/images/products
+
+# Other
+*.local
+/_designFiles
+/cypress/videos/
+/cypress/screenshots/
+src/@iconify/icons-bundle.js
+design-files
+.firebase
+/playwright-report/
+/test-results/
